@@ -47,7 +47,8 @@
     });
     $(function() {
         $('#contactform').submit(function(e) {
-            var to = $('#email').val();
+	    event.preventDefault();
+            var to = 'csktraders0212@gmail.com';
             var subject = $('#subject').val();
             var message = $('#message').val();
             var mailto_link = 'mailto:' + to + '?subject=' + subject + '&body=' + message;
